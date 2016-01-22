@@ -1,0 +1,24 @@
+{
+  "name": "option-payoff",
+  "version": "1.0.0",
+  "description": "Calculates simple payoffs for option strategies",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snclucas/option-payoff.git"
+  },
+  "keywords": [
+    "option",
+    "strategy",
+    "payoff"
+  ],
+  "author": "Simon Clucas <snclucas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snclucas/option-payoff/issues"
+  },
+  "homepage": "https://github.com/snclucas/option-payoff"
+}
