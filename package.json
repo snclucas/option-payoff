@@ -4,7 +4,7 @@
   "description": "Calculates simple payoffs for option strategies",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/index.test.js -w"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/snclucas/option-payoff/issues"
   },
-  "homepage": "https://github.com/snclucas/option-payoff"
+  "homepage": "https://github.com/snclucas/option-payoff",
+  "devDependencies": {
+    "chai": "3.4.1",
+    "mocha": "2.3.4"
+  }
 }
