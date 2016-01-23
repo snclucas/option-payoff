@@ -4,7 +4,7 @@
   "description": "Calculates simple payoffs for option strategies",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha test/index.test.js"
+    "test": "mocha test/index.test.js" 
   },
   "repository": {
     "type": "git",
