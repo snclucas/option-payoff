@@ -2,12 +2,7 @@
 
 # Option payoff
 
-Option payoff is a simple microlibrary to calculate payoffs for simple option startegies. Currently the only strategies supported are:
-
-  - Single option
-  - Straddle
-  - Strangle
-  - Spread
+Option payoff is a simple microlibrary to calculate payoffs for simple option startegies. 
   
 # Installation
 
@@ -18,19 +13,35 @@ npm install option-payoff
 ```js
 var optionPayoff = require('option-payoff');
 
-var underlyingPrice = 36.23;
-var underlyingPrice = 37;
-var premium = 0.23;
-var priceRange = [34,35,36,37,38,39,40];
+var option1 = {side: 'buy', type: 'call', strike: 2, bid: 2, ask: 2};
+var option2 = {side: 'sell', type: 'call', strike: 6, bid: 1, ask: 1};
+var payoffMeta = {underlyingPrice:3,priceRange:[1,2,3,4,5]};
 
-var singleBuyCallPayoff = optionPayoff.single('buy', 'call', strike, premium, underlyingPrice, priceRange);
-var singleSellPutPayoff = optionPayoff.single('sell', 'put',  strike, premium, underlyingPrice, priceRange);
+var payoff = optionPayoff.payoff([option1, option2], payoffMeta);
 
-var straddleBuyPayoff = optionPayoff.straddle('buy', strike, premium, underlyingPrice, priceRange);
-var straddleSellPayoff = optionPayoff.straddle('sell', strike, premium, underlyingPrice, priceRange);
+{ 
+  options: [{ 
+    side: 'buy', 
+    type: 'call', 
+    strike: 2, 
+    bid: 2, 
+    ask: 2 
+  },
+  { 
+    side: 'sell', 
+    type: 'call', 
+    strike: 6, 
+    bid: 1, 
+    ask: 1 
+  }],
+  meta: { 
+    underlyingPrice: 3, 
+    priceRange: [ 1, 2, 3, 4, 5 ] 
+  },
+  payoff: [ 0, -1, -2, -1, 0  ] 
+}
 
-var strangleBuyPayoff = optionPayoff.straddle('buy', callstrike, putstrike, callpremium, putpremium, underlyingPrice, priceRange);
-var strangleSellPayoff = optionPayoff.straddle('sell', callstrike, putstrike, callpremium, putpremium, underlyingPrice, priceRange);
+
 ```
 
 ### Version
@@ -38,8 +49,7 @@ var strangleSellPayoff = optionPayoff.straddle('sell', callstrike, putstrike, ca
 
 ### Todos
 
- - Iron condor
- - ... more
+ - Add stock strategy
 
 License
 ----
