@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/snclucas/webapps/node/bin/node',
+1 verbose cli   '/home/snclucas/webapps/node/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/snclucas/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/snclucas/.npm/option-payoff/2.0.0/package.tgz', '.' ]
+11 verbose tarball /home/snclucas/.npm/option-payoff/2.0.0/package.tgz
+12 verbose folder .
+13 info prepublish option-payoff@2.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/snclucas/.npm/1f1177db-tar.lock
+16 silly lockFile b2fa447b--option-payoff-2-0-0-package-tgz tar:///home/snclucas/.npm/option-payoff/2.0.0/package.tgz
+17 verbose lock tar:///home/snclucas/.npm/option-payoff/2.0.0/package.tgz /home/snclucas/.npm/b2fa447b--option-payoff-2-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile b2fa447b--option-payoff-2-0-0-package-tgz tar:///home/snclucas/.npm/option-payoff/2.0.0/package.tgz
+21 silly lockFile b2fa447b--option-payoff-2-0-0-package-tgz tar:///home/snclucas/.npm/option-payoff/2.0.0/package.tgz
+22 silly lockFile 3a4d3ac4--npm-option-payoff-2-0-0-package /home/snclucas/.npm/option-payoff/2.0.0/package
+23 verbose lock /home/snclucas/.npm/option-payoff/2.0.0/package /home/snclucas/.npm/3a4d3ac4--npm-option-payoff-2-0-0-package.lock
+24 silly lockFile 3a4d3ac4--npm-option-payoff-2-0-0-package /home/snclucas/.npm/option-payoff/2.0.0/package
+25 silly lockFile 3a4d3ac4--npm-option-payoff-2-0-0-package /home/snclucas/.npm/option-payoff/2.0.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'option-payoff',
+28 silly publish   version: '2.0.0',
+28 silly publish   description: 'Calculates simple payoffs for option strategies',
+28 silly publish   main: 'src/index.js',
+28 silly publish   scripts: { test: 'mocha test/index.test.js' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/snclucas/option-payoff.git' },
+28 silly publish   keywords: [ 'option', 'strategy', 'payoff' ],
+28 silly publish   author: { name: 'Simon Clucas', email: 'snclucas@gmail.com' },
+28 silly publish   license: 'MIT',
+28 silly publish   bugs: { url: 'https://github.com/snclucas/option-payoff/issues' },
+28 silly publish   homepage: 'https://github.com/snclucas/option-payoff',
+28 silly publish   devDependencies: { chai: '3.4.1', mocha: '2.3.4' },
+28 silly publish   readme: '[![Build Status](https://travis-ci.org/snclucas/option-payoff.svg?branch=master)](https://travis-ci.org/snclucas/option-payoff)\n\n# Option payoff\n\nOption payoff is a simple microlibrary to calculate payoffs for simple option startegies. \n  \n# Installation\n\n```js\nnpm install option-payoff\n```\n# Installation\n```js\nvar optionPayoff = require(\'option-payoff\');\n\nvar option1 = {side: \'buy\', type: \'call\', strike: 2, bid: 2, ask: 2};\nvar option2 = {side: \'sell\', type: \'call\', strike: 6, bid: 1, ask: 1};\nvar payoffMeta = {underlyingPrice:3,priceRange:[1,2,3,4,5]};\n\nvar payoff = optionPayoff.payoff([option1, option2], payoffMeta);\n\n{ \n  options: [{ \n    side: \'buy\', \n    type: \'call\', \n    strike: 2, \n    bid: 2, \n    ask: 2 \n  },\n  { \n    side: \'sell\', \n    type: \'call\', \n    strike: 6, \n    bid: 1, \n    ask: 1 \n  }],\n  meta: { \n    underlyingPrice: 3, \n    priceRange: [ 1, 2, 3, 4, 5 ] \n  },\n  payoff: [ 0, -1, -2, -1, 0  ] \n}\n\n\n```\n\n### Version\n1.0.0\n\n### Todos\n\n - Add stock strategy\n\nLicense\n----\n\nMIT\n\n\n\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '5b0276cc2b5ff6a17bf1301742647aa17db5c9f3',
+28 silly publish   _id: 'option-payoff@2.0.0',
+28 silly publish   _shasum: '434827ef7539549c59198fc0c6500564b6e98685',
+28 silly publish   _from: '.' }
+29 verbose request where is /option-payoff
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id b172fc8c85261c5a
+32 verbose url raw /option-payoff
+33 verbose url resolving [ 'https://registry.npmjs.org/', './option-payoff' ]
+34 verbose url resolved https://registry.npmjs.org/option-payoff
+35 verbose request where is https://registry.npmjs.org/option-payoff
+36 info trying registry request attempt 1 at 22:41:46
+37 http PUT https://registry.npmjs.org/option-payoff
+38 http 403 https://registry.npmjs.org/option-payoff
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sat, 23 Jan 2016 22:41:47 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-dfw1828-DFW',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1453588906.095326,VS0,VE1538' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 2.0.0." : option-payoff
+41 error     at RegClient.<anonymous> (/home/snclucas/webapps/node/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+41 error     at Request._callback (/home/snclucas/webapps/node/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+41 error     at Request.self.callback (/home/snclucas/webapps/node/lib/node_modules/npm/node_modules/request/request.js:123:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/home/snclucas/webapps/node/lib/node_modules/npm/node_modules/request/request.js:893:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/home/snclucas/webapps/node/lib/node_modules/npm/node_modules/request/request.js:844:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 2.6.32-531.23.3.lve1.2.65.el6.x86_64
+44 error command "/home/snclucas/webapps/node/bin/node" "/home/snclucas/webapps/node/bin/npm" "publish"
+45 error cwd /home/snclucas/jslibs
+46 error node -v v0.10.31
+47 error npm -v 1.4.23
+48 verbose exit [ 1, true ]
