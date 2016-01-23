@@ -19,7 +19,11 @@ var underlyingPrice = 37;
 var premium = 0.23;
 var priceRange = [34,35,36,37,38,39,40];
 
-var singleBuyCallPayoff = optionPayoff.single('buy|call', 'call|put', underlyingPrice, strike, premium, priceRange);
+var singleBuyCallPayoff = optionPayoff.single('buy', 'call', underlyingPrice, strike, premium, priceRange);
+var singleSellPutPayoff = optionPayoff.single('sell', 'put', underlyingPrice, strike, premium, priceRange);
+
+var straddleBuyPayoff = optionPayoff.single('buy', underlyingPrice, strike, premium, priceRange);
+var straddleSellPayoff = optionPayoff.single('sell', underlyingPrice, strike, premium, priceRange);
 ```
 
 ### Version
