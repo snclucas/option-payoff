@@ -1,6 +1,6 @@
 {
   "name": "option-payoff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculates simple payoffs for option strategies",
   "main": "src/index.js",
   "scripts": {
