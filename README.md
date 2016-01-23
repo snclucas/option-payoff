@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/snclucas/option-payoff.svg?branch=master)](https://travis-ci.org/snclucas/option-payoff)
+
 # Option payoff
 
 Option payoff is a simple microlibrary to calculate payoffs for simple option startegies. Currently the only strategies supported are:
